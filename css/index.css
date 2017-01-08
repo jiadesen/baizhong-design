@@ -1,0 +1,547 @@
+/*!
+ * 基于Bootstrap v3.3.7的移动优先响应式布局
+ *
+ * 媒体查询断点:
+ * PHONE: min-width: 320px;
+ * PAD: min-width: 768px;
+ * PC(Like:15inch): min-width: 992px;
+ * PC(Huge): min-width: 1200px;
+ *
+ * Copyright DeSen Jia
+ */
+
+/*通用样式*/
+body {
+    font-family: "microsoft yahei", Arial, sans-serif;
+    background: #fff;
+    color: #848484;
+    min-width: 320px;
+}
+
+ul {
+    padding: 0;
+    /*margin: 0;*/
+    list-style: none;
+}
+
+/*bootstrap.css中1099行对a标签的配置*/
+/*a {*/
+/*color: #848484;*/
+/*}*/
+
+/*a:hover {*/
+/*color: #848484;*/
+/*}*/
+
+/*icon图标字体*/
+@font-face {
+    font-family: Glyphicons Halflings;
+    src: url('../fonts/glyphicons-halflings-regular.ttf');
+}
+
+.slick-responsive div.box i.icon-plane {
+    font-family: 'Glyphicons Halflings';
+}
+
+.slick-responsive div.box i.icon-plane:before {
+    content: '\e171';
+    font-size: 1.5em;
+}
+
+a.active {
+    color: #000;
+}
+
+.header {
+    margin: 0;
+    padding: 10px 5px;
+    border: none;
+    box-shadow: 0 4px 14px #666;
+    position: fixed;
+    z-index: 2000;
+    background: #fff;
+}
+
+.navbar-header .logo {
+    /*height: 50px;*/
+    vertical-align: bottom;
+}
+
+.logo-a:hover .logo {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+    transform: rotate3d(0, 1, 0, 360deg);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+}
+
+.icon-bar {
+    background: #76838f;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+}
+
+.menu-active .icon-down {
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: rotate(33deg);
+    transform: rotate(33deg);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.menu-active .icon-none {
+    background: none;
+    -webkit-transition: .3s linear;
+    transition: .3s linear;
+}
+
+.menu-active .icon-up {
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: rotate(-33deg);
+    transform: rotate(-33deg);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+#menu ul li a:hover {
+    background: none;
+}
+
+/*************************************************************PHONE-320px*******************************************************************/
+@media screen and (min-width: 320px) {
+    /*导航条折叠部分*/
+    #menu {
+        float: left;
+    }
+
+    .navbar-header .logo {
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    /*手机设备上：首页轮播背景图片*/
+    #main .section,
+    #main .section .fp-slides .fp-slidesContainer .slide .fp-tableCell {
+        /*height: 233px;*/
+        height: 100% !important;
+    }
+
+    #main .section {
+        position: relative;
+        /*background: #f6f6f6;*/
+        background: #fff;
+    }
+
+    #main .section3 {
+        z-index: 400;
+    }
+
+    #main .section4 {
+        z-index: 600;
+    }
+
+    #main .phone-sec {
+        margin-bottom: 30px;
+    }
+
+    #main .section .slide img {
+        display: block;
+        width: 100%;
+        padding-top: 70px;
+    }
+
+    /*首页案例*/
+    .title-box .title-name {
+        height: 50px;
+        text-align: center;
+    }
+
+    .title-box .title-name:hover h3,
+    .title-box .title-name:hover span {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    .title-box .title-name h3 {
+        font-size: 1.8em;
+        margin-top: 0;
+        margin-bottom: 5px;
+        color: #393939;
+        -webkit-transition: .3s .1s;
+        transition: .3s .1s;
+    }
+
+    .title-box .title-name span {
+        display: block;
+        line-height: 22px;
+        color: #a8a8a8;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .title-box .title-nav {
+        height: 50px;
+        line-height: 25px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .title-box .title-nav i {
+        color: #c7c7c7;
+        font-size: .8em;
+        margin: 0 5px;
+    }
+
+    .slick-row div.box-case {
+        /*margin-right: 20px;*/
+        position: relative;
+        bottom: -600px;
+        /*opacity: 0;*/
+    }
+
+    /*案例图片*/
+    .slick-row img {
+        width: 100%;
+    }
+
+    .slick-dots {
+        display: none !important;
+    }
+
+    .slick-row div.box p i.icon-plane {
+        display: none;
+    }
+
+    .slick-row {
+        margin-top: 30px;
+    }
+
+    .case-img .slick-row .box {
+        padding: 0 10px;
+    }
+
+    .slick-row div.box p span {
+        display: inline-block;
+        width: 100%;
+        line-height: 40px;
+        font-size: 1em;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /*首页服务*/
+    #main .section3 {
+        background: center no-repeat;
+    }
+
+    #main .section3 {
+        background-image: url("../img/service_bg.jpg");
+        background-size: cover;
+    }
+
+    /*#main .section3 .service {*/
+        /*position: relative;*/
+        /*z-index: 500;*/
+    /*}*/
+
+}
+
+/*************************************************************PAD-768px*********************************************************************/
+@media screen and (min-width: 768px) {
+    /*导航条折叠部分*/
+    #menu {
+        float: right;
+    }
+
+    .navbar-header .logo {
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    #menu ul li a {
+        padding: 0 15px;
+        line-height: 50px;
+        font-size: 1.1em;
+    }
+
+    #menu ul li a:hover {
+        color: #000;
+        -webkit-transition: .4s ease-in-out;
+        transition: .4s ease-in-out;
+    }
+
+    #menu ul li a:before {
+        content: '';
+        display: block;
+        width: 0;
+        border-bottom: 2px solid #e60012;
+        position: absolute;
+        bottom: -11px;
+        left: 5%;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    #menu ul li a:after {
+        content: '';
+        display: block;
+        width: 0;
+        border-bottom: 3px solid #e60012;
+        position: absolute;
+        top: -10px;
+        left: 5%;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    #menu ul li:hover a:before {
+        width: 90%;
+        box-shadow: 0 -10px 38px #e60012;
+        -webkit-transition: .4s ease-in-out;
+        transition: .4s ease-in-out;
+    }
+
+    #menu ul li:hover a:after {
+        width: 90%;
+        box-shadow: 0 10px 38px #e60012;
+        -webkit-transition: .4s ease-in-out;
+        transition: .4s ease-in-out;
+    }
+
+    /*PAD设备以上：首页轮播背景cover 、居中等比缩放*/
+    #main .section .slide {
+        background: center no-repeat;
+        background-size: cover;
+    }
+
+    #main .section .slide img {
+        display: none;
+    }
+
+    #main .section .ban-bg-1 {
+        background-image: url("../img/banner/index_ban1.jpg");
+    }
+
+    #main .section .ban-bg-2 {
+        background-image: url("../img/banner/index_ban2.png");
+    }
+
+    #main .section .ban-bg-3 {
+        background-image: url("../img/banner/index_ban3.jpg");
+    }
+
+    #menu .section {
+        position: relative;
+    }
+
+    /*首页案例*/
+    .case-img {
+        width: 100%;
+        z-index: 200;
+    }
+
+    .title-box .title-name {
+        text-align: left;
+    }
+
+    .title-box .title-nav {
+        height: 50px;
+        line-height: 50px;
+        text-align: right;
+        padding-right: 40px;
+        margin-top: 0;
+    }
+
+    .title-box .title-name .span-case {
+        margin-left: 10px;
+    }
+
+    .slick-row {
+        padding: 0 80px;
+    }
+
+    .slick-row div.box-case {
+        margin-right: 20px;
+        position: relative;
+        bottom: -600px;
+        opacity: 0;
+    }
+
+    .slick-row div.box a {
+        display: block;
+    }
+
+    .slick-row div.box div {
+        overflow: hidden;
+    }
+
+    .slick-row img {
+        width: 100%;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .slick-row div.box a:hover img {
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-transform: scale(1.1, 1.1);
+        transform: scale(1.1, 1.1);
+    }
+
+    /*案例描述*/
+    .slick-row div p {
+        margin: 0;
+        padding: 5px 0;
+        height: 60px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .slick-row div.box a:after {
+        content: '';
+        display: block;
+        width: 0;
+        border-bottom: 1px solid #A8A8A8;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .slick-row div.box:hover a:after {
+        width: 100%;
+        -webkit-transition: .4s ease-in-out;
+        transition: .4s ease-in-out;
+    }
+
+    .slick-row div.box p span {
+        font-size: 1.1em;
+        padding-right: 45px;
+        line-height: 50px;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .slick-row div.box p i.icon-plane {
+        display: inline-block;
+        width: 26px;
+        height: 36px;
+        border-left: 1px solid #a8a8a8;
+        line-height: 36px;
+        text-align: center;
+        position: relative;
+        left: -20px;
+        bottom: 13px;
+        opacity: 0;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .slick-row div.box a:hover span {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+
+    .slick-row div.box a:hover i.icon-plane {
+        left: -33px;
+        opacity: 1;
+        -webkit-transition: .4s ease-in-out;
+        transition: .4s ease-in-out;
+    }
+
+    /*案例原点导航*/
+    .slick-dots {
+        display: block !important;
+        float: left;
+        margin-top: 30px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        bottom: -300px;
+    }
+
+    .slick-dots li {
+        display: inline-block;
+        padding: 0 5px;
+    }
+
+    .slick-dots li button {
+        font-size: 0;
+        padding: 0;
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        border: 0;
+        border-radius: 50%;
+        outline: none;
+        background: #A8A8A8;
+    }
+
+    .slick-dots li.slick-active button {
+        background: #333;
+    }
+
+}
+
+/*************************************************************PC(15inch)-992px**************************************************************/
+@media screen and (min-width: 992px) {
+    /*导航条折叠部分*/
+    #menu ul li a {
+        padding: 0 30px;
+    }
+
+    .navbar-header .logo {
+        height: 50px;
+        margin: 0;
+    }
+
+}
+
+/*************************************************************PC(Huge)-1200px****************************************************************/
+@media screen and (min-width: 1200px) {
+    /*导航条折叠部分 继承 min-width: 992px 样式*/
+    /*案例*/
+    .case-con-lg {
+        width: 100%;
+    }
+
+    .lg-padding-left {
+        padding-left: 100px;
+    }
+
+    .title-box .lg-padding-right {
+        padding-right: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
