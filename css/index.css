@@ -39,13 +39,91 @@ ul {
     src: url('../fonts/glyphicons-halflings-regular.ttf');
 }
 
-.slick-responsive div.box i.icon-plane {
-    font-family: 'Glyphicons Halflings';
+@font-face {
+    font-family: Fontawesome;
+    src: url('../fonts/fontawesome-webfont.ttf');
 }
 
-.slick-responsive div.box i.icon-plane:before {
+.slick-responsive div.box-case i.icon-plane {
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+}
+
+.slick-responsive div.box-case i.icon-plane:before {
     content: '\e171';
     font-size: 1.5em;
+}
+
+.slick-responsive div.box-service i.icon-down {
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+}
+
+.slick-responsive div.box-service i.icon-down:before {
+    content: '\e252';
+    font-size: 2em;
+}
+
+.address .addr {
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+}
+
+.address .addr:before {
+    content: '\e062';
+    font-size: 1em;
+}
+
+.address .email {
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+}
+
+.address .email:before {
+    content: '\2709';
+    font-size: 1em;
+}
+
+.address .phone {
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+}
+
+.address .phone:before {
+    content: '\e183';
+    font-size: 1em;
+}
+
+.address .internet {
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+}
+
+.address .internet:before {
+    content: '\e135';
+    font-size: 1em;
+}
+
+.weixin {
+    font-family: 'Fontawesome';
+}
+
+.weixin:before {
+    content: '\f1d7';
+    font-size: 1.3em;
+}
+
+.weixin img {
+    width: 170px;
+}
+
+.tencent {
+    font-family: 'Fontawesome';
+}
+
+.tencent:before {
+    content: '\f1d6';
+    font-size: 1em;
 }
 
 a.active {
@@ -181,6 +259,15 @@ a.active {
         transition: .3s;
     }
 
+    /*服务*/
+    .service-title-box .title-name h3 {
+        color: #fff;
+    }
+
+    .service-title-box .title-name span {
+        color: #a6a6a6;
+    }
+
     .title-box .title-nav {
         height: 50px;
         line-height: 25px;
@@ -222,7 +309,7 @@ a.active {
         padding: 0 10px;
     }
 
-    .slick-row div.box p span {
+    .slick-row div.box-case p span {
         display: inline-block;
         width: 100%;
         line-height: 40px;
@@ -243,11 +330,204 @@ a.active {
         background-size: cover;
     }
 
-    /*#main .section3 .service {*/
-        /*position: relative;*/
-        /*z-index: 500;*/
-    /*}*/
+    .service {
+        position: relative;
+    }
 
+    .service .box-service div h1 {
+        display: none;
+    }
+
+    .service .box-service {
+        position: relative;
+    }
+
+    .service .box1 {
+        top: 550px;
+    }
+
+    .service .box2 {
+        top: 550px;
+    }
+
+    .service .box3 {
+        top: 350px;
+    }
+
+    .service .box4 {
+        top: 350px;
+    }
+
+    .service .service-slick .box-service p {
+        text-align: center;
+        color: #a6a6a6;
+        margin-bottom: 5px;
+        font-size: .8em;
+    }
+
+    .service .service-slick .box-service p span,
+    .service .service-slick .box-service p i {
+        display: block;
+        text-align: center;
+    }
+
+    .service .service-slick .box-service p span {
+        line-height: 20px;
+        margin-top: 5px;
+        font-size: 1.3em;
+    }
+
+    /*联系*/
+    .section4 {
+        position: relative;
+    }
+
+    #main .section4 {
+        background: center no-repeat;
+    }
+
+    #main .section4 {
+        background-image: url("../img/contact_bg.jpg");
+        background-size: cover;
+    }
+
+    .contact-con {
+        width: 95%;
+        padding: 0 5px;
+    }
+
+    .contact-title-box {
+        position: relative;
+        top: -20px;
+    }
+
+    .section4 .address {
+        /*width: 100%;*/
+    }
+
+    .section4 .address h4 {
+        padding-bottom: 15px;
+    }
+
+    .section4 .address p {
+        padding-left: 10px;
+        margin-top: 5px;
+    }
+
+    .section4 .address p span {
+        position: relative;
+        top: 2px;
+        right: 7px;
+    }
+
+    .map-box {
+        padding-top: 50px;
+    }
+
+    #maps {
+        width: 60%;
+    }
+
+    #main .section4 .contact-con {
+        /*margin-top: 30px;*/
+    }
+
+    /*.contact-title-box .title-name h3 {*/
+    /*color: #fff;*/
+    /*}*/
+    /*.contact-title-box .title-name span {*/
+    /*color: #a6a6a6;*/
+    /*}*/
+    /*地图*/
+    #maps {
+        width: 99%;
+        height: 211px;
+        border: 1px solid #000;
+    }
+
+    .map-box {
+        padding-top: 10px;
+    }
+
+    .footer {
+        position: absolute;
+        width: 100%;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        height: 40px;
+        line-height: 30px;
+    }
+
+    .qq {
+        height: 40px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+
+    /*TODO:联系320*/
+    .weixin {
+        cursor: pointer;
+        color: #51C332;
+        display: inline-block;
+    }
+
+    .wb {
+        position: absolute;
+        top: -180px;
+        opacity: 0;
+        display: none;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .weixin:hover .wb {
+        display: block;
+        opacity: 1;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .section4 {
+        height: 1000px;
+    }
+
+    .contact-con {
+        position: relative;
+        top: -15px;
+    }
+
+    .section .address h4 {
+        margin: 5px 0;
+        padding-bottom: 0;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .address p {
+        font-size: .9em;
+        margin: 3px 0;
+        text-align: center;
+        /*color: red;*/
+    }
+
+    .qq {
+        text-align: center;
+    }
+
+    .copy {
+        background: #000;
+    }
+
+    .copy p {
+        text-align: center;
+    }
+
+    .wb {
+        left: 130px;
+    }
 }
 
 /*************************************************************PAD-768px*********************************************************************/
@@ -362,7 +642,7 @@ a.active {
     }
 
     .slick-row {
-        padding: 0 80px;
+        padding: 0 120px;
     }
 
     .slick-row div.box-case {
@@ -386,7 +666,7 @@ a.active {
         transition: .3s;
     }
 
-    .slick-row div.box a:hover img {
+    .slick-row div.box-case a:hover img {
         -webkit-transform-origin: center center;
         transform-origin: center center;
         -webkit-transform: scale(1.1, 1.1);
@@ -394,7 +674,7 @@ a.active {
     }
 
     /*案例描述*/
-    .slick-row div p {
+    .slick-row div.box-case p {
         margin: 0;
         padding: 5px 0;
         height: 60px;
@@ -402,7 +682,7 @@ a.active {
         text-overflow: ellipsis;
     }
 
-    .slick-row div.box a:after {
+    .slick-row div.box-case a:after {
         content: '';
         display: block;
         width: 0;
@@ -411,13 +691,13 @@ a.active {
         transition: .3s ease-in-out;
     }
 
-    .slick-row div.box:hover a:after {
+    .slick-row div.box-case:hover a:after {
         width: 100%;
         -webkit-transition: .4s ease-in-out;
         transition: .4s ease-in-out;
     }
 
-    .slick-row div.box p span {
+    .slick-row div.box-case p span {
         font-size: 1.1em;
         padding-right: 45px;
         line-height: 50px;
@@ -425,7 +705,7 @@ a.active {
         transition: .3s;
     }
 
-    .slick-row div.box p i.icon-plane {
+    .slick-row div.box-case p i.icon-plane {
         display: inline-block;
         width: 26px;
         height: 36px;
@@ -440,12 +720,12 @@ a.active {
         transition: .3s ease-in-out;
     }
 
-    .slick-row div.box a:hover span {
+    .slick-row div.box-case a:hover span {
         -webkit-transform: translateX(5px);
         transform: translateX(5px);
     }
 
-    .slick-row div.box a:hover i.icon-plane {
+    .slick-row div.box-case a:hover i.icon-plane {
         left: -33px;
         opacity: 1;
         -webkit-transition: .4s ease-in-out;
@@ -460,7 +740,7 @@ a.active {
         width: 100%;
         text-align: center;
         position: relative;
-        bottom: -300px;
+        bottom: -1000px;
     }
 
     .slick-dots li {
@@ -484,6 +764,229 @@ a.active {
         background: #333;
     }
 
+    /*服务*/
+    .service .box-service {
+        top: -50px;
+        opacity: 0;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    .service .service-slick .box1 {
+        left: -35%;
+    }
+
+    .service .service-slick .box2 {
+        left: -60%;
+    }
+
+    .service .service-slick .box3 {
+        left: -85%;
+    }
+
+    .service .service-slick .box4 {
+        left: -110%;
+    }
+
+    .service .box-service div {
+        position: relative;
+    }
+
+    .service .box-service div h1 {
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 4em;
+        opacity: 1;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    .service .box-service div img {
+        opacity: 0;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    .service .box-service:hover {
+        top: 0;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    .service .box-service:hover h1 {
+        opacity: 0;
+        font-size: 10em;
+        top: 10%;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    .service .box-service:hover img {
+        opacity: 1;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    .service .service-slick .box-service p {
+        margin-bottom: 0;
+        padding: 10px 20px 0;
+        font-size: 1em;
+    }
+
+    .service .service-slick .box-service p.detail,
+    .service .service-slick .box-service p.more {
+        color: #393939;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .service-slick {
+        margin-top: 0;
+    }
+
+    .service .box-service a {
+        padding-top: 280px;
+        padding-bottom: 370px;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    .service .box-service:hover {
+        background: rgba(255, 255, 255, .8);
+        -webkit-transition: 1s;
+        transition: 1s;
+    }
+
+    .service .service-slick .box-service p.detail {
+        padding-top: 0;
+        line-height: 27px;
+    }
+
+    .service .service-slick .box-service p span,
+    .service .service-slick .box-service p i {
+        line-height: 30px;
+        /*color: #a6a6a6;*/
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .service .box-service:hover span,
+    .service .box-service:hover i {
+        color: #000;
+        -webkit-transition: .5s;
+        transition: .5s;
+    }
+
+    .service .service-slick .box-service p i {
+        margin-top: 5px;
+    }
+
+    /*服务箭头导航*/
+    .slick-prev {
+        position: absolute;
+        left: 5%;
+        top: 35%;
+        font-size: 0;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        border-top: 4px solid #a8a8a8;
+        border-left: 4px solid #a8a8a8;
+        border-bottom: none;
+        border-right: none;
+        background: none;
+        outline: none;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .slick-next {
+        position: absolute;
+        right: 5%;
+        top: 35%;
+        font-size: 0;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        border-bottom: 4px solid #a8a8a8;
+        border-right: 4px solid #a8a8a8;
+        border-top: none;
+        border-left: none;
+        background: none;
+        outline: none;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .service-title-box {
+        position: relative;
+        top: 250px;
+        right: 20px;
+        z-index: 3000;
+    }
+
+    /*TODO:联系768*/
+    .contact-con .row > div {
+        padding-top: 20px;
+    }
+
+    .section .address h4 {
+        margin: 10px 0;
+        padding-bottom: 15px;
+        font-size: 1.2em;
+        text-align: left;
+    }
+
+    .address p {
+        font-size: 1em;
+        margin: 5px 0;
+        text-align: left;
+        /*color: red;*/
+    }
+
+    .address h4,
+    .address p {
+        position: relative;
+        left: -5px;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    .address h4:hover {
+        left: 0;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .address p:hover {
+        left: 0;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .footer p {
+        float: right;
+        line-height: 40px;
+    }
+
+    .contact-con {
+        position: relative;
+        top: -15px;
+    }
+
+    #maps {
+        width: 90%;
+        height: 210px;
+    }
+
+    .qq {
+        text-align: left;
+    }
+
 }
 
 /*************************************************************PC(15inch)-992px**************************************************************/
@@ -498,13 +1001,52 @@ a.active {
         margin: 0;
     }
 
+    .slick-prev {
+        top: 45%;
+    }
+
+    .slick-next {
+        top: 45%;
+    }
+
+    .service .box-service a {
+        padding-top: 180px;
+        padding-bottom: 190px;
+    }
+
+    /*TODO:联系992*/
+    #maps {
+        width: 75%;
+    }
+
+    .address {
+        padding-left: 20px;
+    }
+
+    .contact-con {
+        top: 10px;
+    }
+
+    .contact-con .row > div {
+        padding-top: 10px;
+    }
+
+    .code img {
+        width: 85%;
+    }
+
+    #maps {
+        width: 90%;
+        height: 240px;
+    }
+
 }
 
 /*************************************************************PC(Huge)-1200px****************************************************************/
 @media screen and (min-width: 1200px) {
     /*导航条折叠部分 继承 min-width: 992px 样式*/
     /*案例*/
-    .case-con-lg {
+    .con-lg {
         width: 100%;
     }
 
@@ -512,8 +1054,43 @@ a.active {
         padding-left: 100px;
     }
 
-    .title-box .lg-padding-right {
-        padding-right: 100px;
+    .service-title-box {
+        top: 150px;
+    }
+
+    .slick-prev {
+        top: 38%;
+        left: 2%;
+    }
+
+    .slick-next {
+        top: 38%;
+        right: 2%;
+    }
+
+    .service .box-service a {
+        padding-top: 120px;
+        padding-bottom: 150px;
+        /*padding-top: 0;*/
+        /*padding-bottom: 0;*/
+    }
+
+    /*TODO:联系1200*/
+    .contact-con {
+        top: 15px;
+    }
+
+    .contact-con .row > div {
+        padding-top: 0;
+    }
+
+    .address {
+        padding-left: 100px;
+    }
+
+    #maps {
+        width: 75%;
+        height: 320px;
     }
 }
 

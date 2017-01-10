@@ -34,78 +34,114 @@ $(
                 'navigation': true, // 侧边导航
                 'navigationColor': '#5a5a5a', // 侧边导航颜色
                 'slidesNavigation': true, // 首页轮播底部控制导航
-                // 'easing':easeOutExpo, // 翻页速度效果
+                // 'easing': 'easeInExpo', // 翻页速度效果
                 // fullpage回调函数页面加载动效
                 afterLoad: function (anchorLink, index) {
                     if (index == 2) {
                         $('.section2').find('div.box1').delay(150).animate({
                             bottom: '0',
                             opacity: '1'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box2').delay(200).animate({
                             bottom: '0',
                             opacity: '1'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box3').delay(250).animate({
                             bottom: '0',
                             opacity: '1'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box4').delay(300).animate({
                             bottom: '0',
                             opacity: '1'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box5').delay(350).animate({
                             bottom: '0',
                             opacity: '1'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box6').delay(400).animate({
                             bottom: '0',
                             opacity: '1'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box7').delay(450).animate({
                             bottom: '0',
                             opacity: '1'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box8').delay(500).animate({
                             bottom: '0',
                             opacity: '1'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('ul.slick-dots').delay(550).animate({
                             bottom: '0',
                             opacity: '1'
                         }, 1000, 'easeOutExpo')
+                    }
+                    if (index == 3) {
+                        $('.section3').find('.box1').delay(10).animate({
+                            left: '0',
+                            opacity: '1'
+                        }, 1000, 'linear');
+                        $('.section3').find('.box2').delay(10).animate({
+                            left: '0',
+                            opacity: '1'
+                        }, 1000, 'linear');
+                        $('.section3').find('.box3').delay(10).animate({
+                            left: '0',
+                            opacity: '1'
+                        }, 1000, 'linear');
+                        $('.section3').find('.box4').delay(10).animate({
+                            left: '0',
+                            opacity: '1'
+                        }, 1000, 'linear');
                     }
                 },
                 onLeave: function (index, direction) {
                     if (index == '2') {
                         $('.section2').find('div.box1').delay(150).animate({
                             bottom: '-600px'
-                        }, 600, 'easeOutExpo');
+                        }, 100, 'easeOutExpo');
                         $('.section2').find('div.box2').delay(200).animate({
                             bottom: '-600px'
-                        }, 600, 'easeOutExpo');
+                        }, 100, 'easeOutExpo');
                         $('.section2').find('div.box3').delay(250).animate({
                             bottom: '-600px'
-                        }, 600, 'easeOutExpo');
+                        }, 100, 'easeOutExpo');
                         $('.section2').find('div.box4').delay(300).animate({
                             bottom: '-600px'
-                        }, 600, 'easeOutExpo');
+                        }, 100, 'easeOutExpo');
                         $('.section2').find('div.box5').delay(350).animate({
                             bottom: '-600px'
-                        }, 600, 'easeOutExpo');
+                        }, 100, 'easeOutExpo');
                         $('.section2').find('div.box6').delay(400).animate({
                             bottom: '-600px'
-                        }, 600, 'easeOutExpo');
+                        }, 100, 'easeOutExpo');
                         $('.section2').find('div.box7').delay(450).animate({
                             bottom: '-600px'
-                        }, 600, 'easeOutExpo');
+                        }, 100, 'easeOutExpo');
                         $('.section2').find('div.box8').delay(500).animate({
                             bottom: '-600px'
-                        }, 600, 'easeOutExpo');
+                        }, 100, 'easeOutExpo');
                         $('.section2').find('ul.slick-dots').delay(550).animate({
                             bottom: '-300px'
-                        }, 600, 'easeOutExpo')
+                        }, 100, 'easeOutExpo')
                     }
+                    // if (index == 3) {
+                    //     $('.section3').find('.box1').delay(10).animate({
+                    //         left: '-35%',
+                    //         opacity: '0'
+                    //     }, 100, 'linear');
+                    //     $('.section3').find('.box2').delay(10).animate({
+                    //         left: '-60%',
+                    //         opacity: '0'
+                    //     }, 100, 'linear');
+                    //     $('.section3').find('.box3').delay(10).animate({
+                    //         left: '-85%',
+                    //         opacity: '0'
+                    //     }, 100, 'linear');
+                    //     $('.section3').find('.box4').delay(10).animate({
+                    //         left: '-110%',
+                    //         opacity: '0'
+                    //     }, 100, 'linear');
+                    // }
                 }
             });
             $(window).resize(function () {
@@ -136,38 +172,55 @@ $(
                     if (index == 1) {
                         $('.section2').find('div.box1').delay(150).animate({
                             bottom: '0'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box2').delay(200).animate({
                             bottom: '0'
-                        }, 1000, 'easeOutExpo')
+                        }, 800, 'easeOutExpo')
                     }
                     if (index == 2) {
                         $('.section2').find('div.box3').delay(250).animate({
                             bottom: '0'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box4').delay(300).animate({
                             bottom: '0'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box5').delay(350).animate({
                             bottom: '0'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box6').delay(400).animate({
                             bottom: '0'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box7').delay(450).animate({
                             bottom: '0'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('div.box8').delay(500).animate({
                             bottom: '0'
-                        }, 1000, 'easeOutExpo');
+                        }, 800, 'easeOutExpo');
                         $('.section2').find('ul.slick-dots').delay(550).animate({
                             bottom: '0'
-                        }, 1000, 'easeOutExpo')
+                        }, 800, 'easeOutExpo')
+                    }
+                    if (index == 3) {
+                        $('.section3').find('.box1').delay(50).animate({
+                            top: '0'
+                        }, 1100, 'easeOutExpo');
+                        $('.section3').find('.box2').delay(50).animate({
+                            top: '0'
+                        }, 1500, 'easeOutExpo');
+                        $('.section3').find('.box3').delay(50).animate({
+                            top: '0'
+                        }, 1900, 'easeOutExpo');
+                        $('.section3').find('.box4').delay(50).animate({
+                            top: '0'
+                        }, 2300, 'easeOutExpo');
                     }
 
                 }
             });
             $.fn.fullpage.setAutoScrolling(false);
+            setInterval(function(){
+                $.fn.fullpage.moveSlideRight();
+            }, 3000);
         }
     }
 );
@@ -185,7 +238,7 @@ $(
                 infinite: false, //循环播放
                 speed: 300,
                 slidesToShow: 4,
-                slidesToScroll: 4,
+                slidesToScroll: 2,
                 responsive: [
                     {
                         breakpoint: 1200,
@@ -224,10 +277,19 @@ $(
                 infinite: false,
                 speed: 300,
                 slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToScroll: 1,
                 responsive: [
                     {
                         breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                            // infinite: true, // 循环滚动
+                            // dots: true // 指示点
+                        }
+                    },
+                    {
+                        breakpoint: 992,
                         settings: {
                             slidesToShow: 2,
                             slidesToScroll: 2
