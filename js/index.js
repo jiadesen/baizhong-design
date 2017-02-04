@@ -1,7 +1,10 @@
 // 获得当前设备屏幕宽度(px)
 var width = $(window).width();
+
+// TODO:根据屏幕宽度，重载页面
+
+// 手机端下拉菜单点击特效
 $(
-    // 手机端下拉菜单点击特效
     function () {
         $('.icon-btn').click(function () {
             // console.log($('#menu').attr('aria-expanded'));
@@ -93,56 +96,38 @@ $(
                             opacity: '1'
                         }, 1000, 'linear');
                     }
-                },
-                onLeave: function (index, direction) {
-                    if (index == '2') {
-                        $('.section2').find('div.box1').delay(150).animate({
-                            bottom: '-600px'
-                        }, 100, 'easeOutExpo');
-                        $('.section2').find('div.box2').delay(200).animate({
-                            bottom: '-600px'
-                        }, 100, 'easeOutExpo');
-                        $('.section2').find('div.box3').delay(250).animate({
-                            bottom: '-600px'
-                        }, 100, 'easeOutExpo');
-                        $('.section2').find('div.box4').delay(300).animate({
-                            bottom: '-600px'
-                        }, 100, 'easeOutExpo');
-                        $('.section2').find('div.box5').delay(350).animate({
-                            bottom: '-600px'
-                        }, 100, 'easeOutExpo');
-                        $('.section2').find('div.box6').delay(400).animate({
-                            bottom: '-600px'
-                        }, 100, 'easeOutExpo');
-                        $('.section2').find('div.box7').delay(450).animate({
-                            bottom: '-600px'
-                        }, 100, 'easeOutExpo');
-                        $('.section2').find('div.box8').delay(500).animate({
-                            bottom: '-600px'
-                        }, 100, 'easeOutExpo');
-                        $('.section2').find('ul.slick-dots').delay(550).animate({
-                            bottom: '-300px'
-                        }, 100, 'easeOutExpo')
-                    }
-                    // if (index == 3) {
-                    //     $('.section3').find('.box1').delay(10).animate({
-                    //         left: '-35%',
-                    //         opacity: '0'
-                    //     }, 100, 'linear');
-                    //     $('.section3').find('.box2').delay(10).animate({
-                    //         left: '-60%',
-                    //         opacity: '0'
-                    //     }, 100, 'linear');
-                    //     $('.section3').find('.box3').delay(10).animate({
-                    //         left: '-85%',
-                    //         opacity: '0'
-                    //     }, 100, 'linear');
-                    //     $('.section3').find('.box4').delay(10).animate({
-                    //         left: '-110%',
-                    //         opacity: '0'
-                    //     }, 100, 'linear');
-                    // }
                 }
+                // onLeave: function (index, direction) {
+                //     if (index == 2) {
+                //         $('.section2').find('div.box1').delay(150).animate({
+                //             bottom: '-600px'
+                //         }, 100, 'easeOutExpo');
+                //         $('.section2').find('div.box2').delay(200).animate({
+                //             bottom: '-600px'
+                //         }, 100, 'easeOutExpo');
+                //         $('.section2').find('div.box3').delay(250).animate({
+                //             bottom: '-600px'
+                //         }, 100, 'easeOutExpo');
+                //         $('.section2').find('div.box4').delay(300).animate({
+                //             bottom: '-600px'
+                //         }, 100, 'easeOutExpo');
+                //         $('.section2').find('div.box5').delay(350).animate({
+                //             bottom: '-600px'
+                //         }, 100, 'easeOutExpo');
+                //         $('.section2').find('div.box6').delay(400).animate({
+                //             bottom: '-600px'
+                //         }, 100, 'easeOutExpo');
+                //         $('.section2').find('div.box7').delay(450).animate({
+                //             bottom: '-600px'
+                //         }, 100, 'easeOutExpo');
+                //         $('.section2').find('div.box8').delay(500).animate({
+                //             bottom: '-600px'
+                //         }, 100, 'easeOutExpo');
+                //         $('.section2').find('ul.slick-dots').delay(550).animate({
+                //             bottom: '-1000px'
+                //         }, 100, 'easeOutExpo')
+                //     }
+                // }
             });
             $(window).resize(function () {
                 autoScrolling();
@@ -156,9 +141,10 @@ $(
                 }
             }
 
+            // 首页banner控制器
             setInterval(function () {
                 $.fn.fullpage.moveSlideRight();
-            }, 3000);
+            }, 4000);
 
             autoScrolling();
         } else {
@@ -218,9 +204,9 @@ $(
                 }
             });
             $.fn.fullpage.setAutoScrolling(false);
-            setInterval(function(){
+            setInterval(function () {
                 $.fn.fullpage.moveSlideRight();
-            }, 3000);
+            }, 4000);
         }
     }
 );
@@ -238,7 +224,7 @@ $(
                 infinite: false, //循环播放
                 speed: 300,
                 slidesToShow: 4,
-                slidesToScroll: 2,
+                slidesToScroll: 4,
                 responsive: [
                     {
                         breakpoint: 1200,
@@ -277,7 +263,7 @@ $(
                 infinite: false,
                 speed: 300,
                 slidesToShow: 3,
-                slidesToScroll: 1,
+                slidesToScroll: 3,
                 responsive: [
                     {
                         breakpoint: 1200,
@@ -319,9 +305,48 @@ $(
                 $('.fp-slidesNav').addClass('bounceInUp');
                 $('#fp-nav').addClass('rotateInDownRight')
             });
+        } else {
+            $(document).ready(function () {
+                $('#menu ul li a').addClass('animated');
+                $('#menu ul li a').addClass('flipInX');
+            })
         }
     }
 );
 
+//我们的服务点击跳转
+$('.submenu li a').click(function () {
+    var local_ser = window.location.search;
+    // console.log(local_ser != '');
+    var rel = $(this).attr('rel');
+    // console.log(rel);
+    if (local_ser != '') {
+        // console.log($('.design-nav a')[rel]);
+        $(".design-nav a")[rel].click()
+    } else {
+        window.location.href = 'design.html?' + rel;
+    }
+});
 
-
+//地图
+// $(function () {
+//     //地图
+//     // 1、生成地图
+//     var map = new BMap.Map("maps");
+//
+//     // 2、设置中心点坐标和缩放比例
+//     var oPoint = new BMap.Point(116.479354, 39.997747);
+//     map.centerAndZoom(oPoint, 18);
+//     // 3、添加标注
+//     var marker = new BMap.Marker(oPoint);   // 创建标注
+//     map.addOverlay(marker);                 // 添加标注
+//     marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+//     map.enableScrollWheelZoom(true);
+//     var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+//     // var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+//     (function add_control() {
+//         // map.addControl(top_left_control);
+//         map.addControl(top_left_navigation);
+//         // map.addControl(top_right_navigation);
+//     })()
+// });

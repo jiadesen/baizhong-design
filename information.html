@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>百众设计 | 资讯</title>
+    <title>百众设计 | 咨询</title>
     <link rel="icon" href="img/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header.min.css">
+    <link rel="stylesheet" href="css/information.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <!--[if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.js"></script>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
 <body>
@@ -32,35 +34,223 @@
         <div class="navbar-collapse collapse" id="menu">
             <ul class="nav navbar-nav">
                 <li><a href="index.html">首页</a></li>
-                <li><a href="about.html">关于</a></li>
-                <li><a href="design.html">设计案例</a></li>
-                <li><a href="service.html">服务项目</a></li>
-                <li><a class="active" href="information.html">产品资讯</a></li>
-                <li><a href="contact.html">联系</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a class="active" href="information.html">服务项目</a></li>
+                <li><a href="service.html">合作流程</a></li>
+                <li><a href="design.html?design">案例展示</a></li>
+                <li><a href="contact.html">联系我们</a></li>
             </ul>
         </div>
     </div>
+    <!--我们的服务-->
+    <div class="womehti">
+        <ul class="menu">
+            <li><a href="design.html?design">我们的服务</a>
+                <ul class="submenu">
+                    <li><a href="javascript:void(0)" rel="1">LOGO+VIS设计</a></li>
+                    <li><a href="javascript:void(0)" rel="2">画册+海报设计</a></li>
+                    <li><a href="javascript:void(0)" rel="3">网站+APP设计</a></li>
+                    <li><a href="javascript:void(0)" rel="4">品牌+战略咨询</a></li>
+                    <li><a href="javascript:void(0)" rel="5">产品+结构设计</a></li>
+                    <li><a href="javascript:void(0)" rel="6">空间+导示设计</a></li>
+                    <li><a href="javascript:void(0)" rel="7">包装系统设计</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>
 <!--导航栏遮挡部分-->
-<div class="fill"></div>
+<div class="fill" style="height: 70px; width: 100%;"></div>
 <!--主体-->
-<div id="main">
-    <h1 style="margin:0;">测试</h1>
+<div class="pic">
+    <img src="img/4.jpg">
 </div>
-
-<script src="js/jquery-1.11.3.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="js/index.js"></script>
-<script>
-    /*使用Bootlint检查HTML/CSS错误*/
-    //    (function () {
-    //        var s = document.createElement("script");
-    //        s.onload = function () {
-    //            bootlint.showLintReportForCurrentDocument([]);
-    //        };
-    //        s.src = "js/bootlint.js";
-    //        document.body.appendChild(s)
-    //    })();
-</script>
+<div class="container service">
+    <div class="box box1">
+        <h1>我们的服务</h1>
+        <p>无论您选择百众的哪一项服务，我们都能用心做好每一个细节</p>
+        <p class="en">No matter what you choose one of the services, we are doing every detail attentively</p>
+        <div class="row img-box">
+            <div class="col-xs-6 col-md-3">
+                <span class="span1">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>VI标识</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span class="span3">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>画册/宣传册/海报</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span class="span5">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>包装设计</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span class="span7">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>网站&APP</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span class="span9">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>环境导示</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span class="span11">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>UI设计</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span class="span13">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>户外广告</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span class="span15">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>印刷制作服务</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <h1>基于产品现状的品牌诊断</h1>
+        <p>我们以科学的推导过程执行品牌设计形象</p>
+        <p class="en">We carry out brand image design in the process of scientific deduction</p>
+        <div class="row img-box">
+            <div class="col-xs-6 col-md-2 col-md-offset-1">
+                <span class="span17">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>咨询与沟通</p>
+            </div>
+            <div class="col-xs-6 col-md-2">
+                <span class="span19">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>消费者调研</p>
+            </div>
+            <div class="col-xs-4 col-md-2">
+                <span class="span21">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>市场调研</p>
+            </div>
+            <div class="col-xs-4 col-md-2">
+                <span class="span23">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>竞争产品调研</p>
+            </div>
+            <div class="col-xs-4 col-md-2">
+                <span class="span25">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>产品问题诊断</p>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <h1>基于品牌问题的策略分析</h1>
+        <p>为客户做出更好的解决方案</p>
+        <p class="en">Make better solutions for customers</p>
+        <div class="row img-box">
+            <div class="col-xs-6 col-md-2 col-md-offset-1">
+                <span class="span27">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>用户需求分析</p>
+            </div>
+            <div class="col-xs-6 col-md-2">
+                <span class="span29">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>产品现状分析</p>
+            </div>
+            <div class="col-xs-4 col-md-2">
+                <span class="span31">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>竞争产品分析</p>
+            </div>
+            <div class="col-xs-4 col-md-2">
+                <span class="span33">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>产品发展规划</p>
+            </div>
+            <div class="col-xs-4 col-md-2">
+                <span class="span35">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <p>产品设计思路</p>
+            </div>
+        </div>
+    </div>
+    <div class="box box1">
+        <h1>我们的理念</h1>
+        <p>百里挑一，与众不同</p>
+        <p class="en">Only one in a hundred is chosen,out of the ordinary</p>
+        <div class="row img-box">
+            <div class="col-xs-6 col-md-3">
+                <span class="span37">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <h4>诚信</h4>
+                <p>存亡之道莫过诚信</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span class="span39">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <h4>质量</h4>
+                <p>品牌效应信赖质量</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span class="span41">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <h4>服务</h4>
+                <p>换位思考周到服务</p>
+            </div>
+            <div class="col-xs-6 col-md-3">
+                <span class="span43">
+                    <img src="img/service/box.png" alt="box">
+                </span>
+                <h4>创新</h4>
+                <p>立足当下展望未来</p>
+            </div>
+        </div>
+    </div>
+    <div class="text">
+        <p style="font-size: 1.4em;padding-bottom: 50px">没有找到您需要的内容么？请联系百众7x12小时免费咨询</p>
+    </div>
+</div>
+<!--copyright-->
+<div class="container footer">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <div class="qq">
+                <div class="weixin">
+                    <img class="wb" src="img/wangbo.jpg" alt="微信">
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 copy">
+            <p>Copyright ©：北京百众时代文化传媒有限公司</p>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/other.min.js"></script>
 </body>
 </html>

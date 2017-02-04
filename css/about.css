@@ -1,0 +1,92 @@
+.pic {
+    padding: 0;
+}
+
+.pic img {
+    width: 100%;
+}
+
+.about_us {
+    color: #595757;
+}
+
+.about_us h3 {
+    margin-top: 0;
+    font-size: 1.4em;
+    color: #4d4d4d;
+}
+
+.about_us h4 {
+    font-size: 1.2em;
+}
+
+.about_us p {
+    line-height: 25px;
+    text-align: justify;
+    font-size: 1em;
+    padding-bottom: 20px;
+    font-weight: 500;
+    text-indent: 2em;
+}
+
+.pic1 {
+    padding-top: 20px;
+}
+
+.pic2 {
+    padding-top: 150px;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*.customers {*/
+    /*text-align: center;*/
+/*}*/
+
+/*.customers h3 {*/
+    /*margin-top: 0;*/
+    /*font-size: 1.5em;*/
+    /*color: #4d4d4d;*/
+/*}*/
+
+/*.customers img {*/
+    /*width: 100%;*/
+    /*padding-bottom: 50px;*/
+/*}*/
+
+@media screen and (min-width: 320px) {
+    .pic {
+        position: relative;
+    }
+
+    .pic1 {
+        width: 90%;
+        padding-top: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .pic2 {
+        padding: 20px 0;
+    }
+
+    .about_us {
+        padding: 10px 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pic1 {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .pic2 {
+        padding: 100px 0;
+    }
+
+    .about_us {
+        padding: 70px 0;
+    }
+}

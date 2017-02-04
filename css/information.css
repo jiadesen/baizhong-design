@@ -1,0 +1,318 @@
+.pic {
+    padding: 0;
+}
+
+.pic img {
+    width: 100%;
+}
+
+/*body {*/
+    /*background-size: cover;*/
+    /*background-image: url("../img/index_bg.jpg");*/
+/*}*/
+
+span {
+    display: inline-block;
+}
+
+@media screen and (min-width: 320px) {
+    .service .box {
+        margin-bottom: 20px;
+    }
+
+    .service h1,
+    .service p {
+        text-align: center;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .service h1 {
+        margin-top: 25px;
+        font-size: 1.7em;
+    }
+
+    .service p {
+        margin: 0;
+    }
+
+    .service p.en {
+        font-size: .9em;
+    }
+
+    .img-box {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .img-box div {
+        min-height: 100px;
+        text-align: center;
+        margin-bottom: 15px;
+        cursor: pointer;
+    }
+
+    .img-box img {
+        width: 75%;
+    }
+
+    .box1 .img-box img {
+        width: 60%;
+    }
+
+    .img-box p {
+        font-size: .9em;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .service .box {
+        margin-bottom: 30px;
+    }
+
+    .service h1 {
+        margin-top: 30px;
+        font-size: 1.9em;
+    }
+
+    .img-box img {
+        width: 55%;
+    }
+
+    .box1 .img-box img {
+        width: 45%;
+    }
+
+    .img-box p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .service .box {
+        margin-bottom: 60px;
+    }
+
+    .service h1 {
+        margin-top: 70px;
+        font-size: 2em;
+    }
+
+    .service p.en {
+        font-size: .9em;
+    }
+
+    .img-box img {
+        width: 80%;
+    }
+
+    .box1 .img-box img {
+        width: 55%;
+    }
+
+    .img-box div:hover .fr {
+        top: -159px;
+    }
+}
+
+.img-box div h4 {
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+.img-box div:hover p,
+.img-box div:hover h4 {
+    color: #C1272D;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+
+span {
+    background: center no-repeat;
+    background-size: 55%;
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.img-box div:hover span {
+    -webkit-transition: .2s;
+    transition: .2s;
+}
+
+.span1 {
+    background-image: url(../img/service/service-01.png);
+}
+
+.img-box div:hover .span1{
+    background-image: url(../img/service/service-02.png);
+}
+
+.span3 {
+    background-image: url(../img/service/service-03.png);
+}
+
+.img-box div:hover .span3{
+    background-image: url(../img/service/service-04.png);
+}
+
+.span5 {
+    background-image: url(../img/service/service-05.png);
+}
+
+.img-box div:hover .span5{
+    background-image: url(../img/service/service-06.png);
+}
+
+.span7 {
+    background-image: url(../img/service/service-07.png);
+}
+
+.img-box div:hover .span7{
+    background-image: url(../img/service/service-08.png);
+}
+
+.span9 {
+    background-image: url(../img/service/service-09.png);
+}
+
+.img-box div:hover .span9{
+    background-image: url(../img/service/service-10.png);
+}
+
+.span11 {
+    background-image: url(../img/service/service-11.png);
+}
+
+.img-box div:hover .span11{
+    background-image: url(../img/service/service-12.png);
+}
+
+.span13 {
+    background-image: url(../img/service/service-13.png);
+}
+
+.img-box div:hover .span13{
+    background-image: url(../img/service/service-14.png);
+}
+
+.span15 {
+    background-image: url(../img/service/service-15.png);
+}
+
+.img-box div:hover .span15{
+    background-image: url(../img/service/service-16.png);
+}
+
+.span17 {
+    background-image: url(../img/service/service-17.png);
+}
+
+.img-box div:hover .span17{
+    background-image: url(../img/service/service-18.png);
+}
+
+.span19 {
+    background-image: url(../img/service/service-19.png);
+}
+
+.img-box div:hover .span19{
+    background-image: url(../img/service/service-20.png);
+}
+
+.span21 {
+    background-image: url(../img/service/service-21.png);
+}
+
+.img-box div:hover .span21{
+    background-image: url(../img/service/service-22.png);
+}
+
+.span23 {
+    background-image: url(../img/service/service-23.png);
+}
+
+.img-box div:hover .span23{
+    background-image: url(../img/service/service-24.png);
+}
+
+.span25 {
+    background-image: url(../img/service/service-25.png);
+}
+
+.img-box div:hover .span25{
+    background-image: url(../img/service/service-26.png);
+}
+
+.span27 {
+    background-image: url(../img/service/service-27.png);
+}
+
+.img-box div:hover .span27{
+    background-image: url(../img/service/service-28.png);
+}
+
+.span29 {
+    background-image: url(../img/service/service-29.png);
+}
+
+.img-box div:hover .span29{
+    background-image: url(../img/service/service-30.png);
+}
+
+.span31 {
+    background-image: url(../img/service/service-31.png);
+}
+
+.img-box div:hover .span31{
+    background-image: url(../img/service/service-32.png);
+}
+
+.span33 {
+    background-image: url(../img/service/service-33.png);
+}
+
+.img-box div:hover .span33{
+    background-image: url(../img/service/service-34.png);
+}
+
+.span35 {
+    background-image: url(../img/service/service-35.png);
+}
+
+.img-box div:hover .span35{
+    background-image: url(../img/service/service-36.png);
+}
+
+.span37 {
+    background-image: url(../img/service/service-37.png);
+}
+
+.img-box div:hover .span37{
+    background-image: url(../img/service/service-38.png);
+}
+
+.span39 {
+    background-image: url(../img/service/service-39.png);
+}
+
+.img-box div:hover .span39{
+    background-image: url(../img/service/service-40.png);
+}
+
+.span41 {
+    background-image: url(../img/service/service-41.png);
+}
+
+.img-box div:hover .span41{
+    background-image: url(../img/service/service-42.png);
+}
+
+.span43 {
+    background-image: url(../img/service/service-43.png);
+}
+
+.img-box div:hover .span43{
+    background-image: url(../img/service/service-44.png);
+}
