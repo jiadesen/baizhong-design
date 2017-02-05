@@ -131,9 +131,17 @@ span {
 
 span {
     background: center no-repeat;
-    background-size: 55%;
+    background-size: 65%;
     -webkit-transition: .2s;
     transition: .2s;
+}
+
+.span-size span {
+    background-size: 40%;
+}
+
+.span-size-last span {
+    background-size: 52%;
 }
 
 .img-box div:hover span {

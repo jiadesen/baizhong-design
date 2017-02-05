@@ -2,39 +2,15 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/js/gui_configure.min.js" />
         <item url="file://$PROJECT_DIR$/js/jquery-1.11.3.min.js" />
-        <item url="file://$PROJECT_DIR$/js/jquery.fullPage.min.js" />
-        <item url="file://$PROJECT_DIR$/js/respond.min.js" />
-        <item url="file://$PROJECT_DIR$/js/color.min.js" />
-        <item url="file://$PROJECT_DIR$/js/jquery.easing.min.js" />
-        <item url="file://$PROJECT_DIR$/js/projector.min.js" />
-        <item url="file://$PROJECT_DIR$/js/canvas-renderer.min.js" />
-        <item url="file://$PROJECT_DIR$/js/bootstrap.min.js" />
-        <item url="file://$PROJECT_DIR$/js/bootlint.min.js" />
         <item url="file://$PROJECT_DIR$/js/3d-lines-animation.min.js" />
-        <item url="file://$PROJECT_DIR$/js/index.min.js" />
-        <item url="file://$PROJECT_DIR$/js/html5shiv.min.js" />
-        <item url="file://$PROJECT_DIR$/js/other.min.js" />
-        <item url="file://$PROJECT_DIR$/js/slick.min.js" />
+        <item url="file://$PROJECT_DIR$/js/jquery.fullPage.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/js/gui_configure.min.js" />
       <root url="file://$PROJECT_DIR$/js/jquery-1.11.3.min.js" />
-      <root url="file://$PROJECT_DIR$/js/jquery.fullPage.min.js" />
-      <root url="file://$PROJECT_DIR$/js/respond.min.js" />
-      <root url="file://$PROJECT_DIR$/js/color.min.js" />
-      <root url="file://$PROJECT_DIR$/js/jquery.easing.min.js" />
-      <root url="file://$PROJECT_DIR$/js/projector.min.js" />
-      <root url="file://$PROJECT_DIR$/js/canvas-renderer.min.js" />
-      <root url="file://$PROJECT_DIR$/js/bootstrap.min.js" />
-      <root url="file://$PROJECT_DIR$/js/bootlint.min.js" />
       <root url="file://$PROJECT_DIR$/js/3d-lines-animation.min.js" />
-      <root url="file://$PROJECT_DIR$/js/index.min.js" />
-      <root url="file://$PROJECT_DIR$/js/html5shiv.min.js" />
-      <root url="file://$PROJECT_DIR$/js/other.min.js" />
-      <root url="file://$PROJECT_DIR$/js/slick.min.js" />
+      <root url="file://$PROJECT_DIR$/js/jquery.fullPage.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

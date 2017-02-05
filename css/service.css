@@ -20,11 +20,6 @@
     }
 
     /*主体*/
-    .team {
-        /*margin: 0 5px;*/
-        /*padding: 10px;*/
-    }
-
     .team div {
         margin-bottom: 40px;
     }
@@ -79,10 +74,6 @@
 }
 
 @media screen and (min-width: 992px) {
-    .team div h1 {
-        font-size: 2.3em;
-    }
-
     .team div p {
         font-size: 1.2em;
     }

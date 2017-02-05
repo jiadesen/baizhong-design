@@ -206,6 +206,7 @@ a.active {
         position: relative;
         /*background: #f6f6f6;*/
         background: #fff;
+        overflow: hidden;
     }
 
     #main .section3 {
@@ -272,6 +273,10 @@ a.active {
     }
 
     /*服务*/
+    .ph-padding {
+        padding: 40px 0 30px;
+    }
+
     .service-title-box .title-name h3 {
         color: #fff;
     }
@@ -697,7 +702,7 @@ a.active {
         padding-bottom: 5px;
         text-align: center;
         font-family: fangzheng;
-        font-size: 3.5em;
+        font-size: 3.1em;
         color: #000;
     }
 
@@ -861,6 +866,10 @@ a.active {
     }
 
     /*服务*/
+    .ph-padding {
+        padding: 0;
+    }
+
     .service .box-service {
         top: -50px;
         opacity: 0;
@@ -993,9 +1002,8 @@ a.active {
     }
 
     /*.service .service-slick .box-service p i {*/
-        /*margin-top: 5px;*/
+    /*margin-top: 5px;*/
     /*}*/
-
     /*服务箭头导航*/
     .slick-prev {
         position: absolute;
@@ -1130,7 +1138,7 @@ a.active {
     }
 
     #menu ul li a {
-        padding: 0 15px;
+        padding: 0 20px;
     }
 
     .navbar-header .logo {
