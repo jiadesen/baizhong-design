@@ -4,13 +4,17 @@
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/js/jquery-1.11.3.min.js" />
         <item url="file://$PROJECT_DIR$/js/3d-lines-animation.min.js" />
+        <item url="file://$PROJECT_DIR$/js/index.min.js" />
         <item url="file://$PROJECT_DIR$/js/jquery.fullPage.min.js" />
+        <item url="file://$PROJECT_DIR$/js/other.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/js/jquery-1.11.3.min.js" />
       <root url="file://$PROJECT_DIR$/js/3d-lines-animation.min.js" />
+      <root url="file://$PROJECT_DIR$/js/index.min.js" />
       <root url="file://$PROJECT_DIR$/js/jquery.fullPage.min.js" />
+      <root url="file://$PROJECT_DIR$/js/other.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

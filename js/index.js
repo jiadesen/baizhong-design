@@ -308,13 +308,13 @@ $(
         } else {
             $(document).ready(function () {
                 $('#menu ul li a').addClass('animated');
-                $('#menu ul li a').addClass('flipInX');
+                $('#menu ul li a').addClass('flipInX')
             })
         }
     }
 );
 
-//我们的服务点击跳转
+// 我们的服务菜单点击跳转
 $('.submenu li a').click(function () {
     var local_ser = window.location.search;
     // console.log(local_ser != '');
@@ -324,29 +324,6 @@ $('.submenu li a').click(function () {
         // console.log($('.design-nav a')[rel]);
         $(".design-nav a")[rel].click()
     } else {
-        window.location.href = 'design.html?' + rel;
+        window.location.href = 'design.html?' + rel
     }
 });
-
-//地图
-// $(function () {
-//     //地图
-//     // 1、生成地图
-//     var map = new BMap.Map("maps");
-//
-//     // 2、设置中心点坐标和缩放比例
-//     var oPoint = new BMap.Point(116.479354, 39.997747);
-//     map.centerAndZoom(oPoint, 18);
-//     // 3、添加标注
-//     var marker = new BMap.Marker(oPoint);   // 创建标注
-//     map.addOverlay(marker);                 // 添加标注
-//     marker.setAnimation(BMAP_ANIMATION_BOUNCE);
-//     map.enableScrollWheelZoom(true);
-//     var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
-//     // var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
-//     (function add_control() {
-//         // map.addControl(top_left_control);
-//         map.addControl(top_left_navigation);
-//         // map.addControl(top_right_navigation);
-//     })()
-// });
