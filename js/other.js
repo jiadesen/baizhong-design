@@ -25,7 +25,7 @@ if (width < 768) {
     // console.log($('#menu ul li a'));
     $(document).ready(function () {
         $('#menu ul li a').addClass('animated');
-        $('#menu ul li a').addClass('flipInX');
+        $('#menu ul li a').addClass('flipInX')
     })
 }
 
@@ -116,7 +116,7 @@ $('.design-nav a').click(function () {
 // console.log($('.tab-content')[1]);
 $(document).ready(
     function () {
-        $('.zl').siblings().hide();
+        $('.zl').siblings().hide()
     }
 );
 
@@ -160,7 +160,7 @@ $(
             case 'hhr':
                 $('.hhr').show();
                 $('.hhr').siblings().hide();
-                break;
+                break
         }
     })
 );
@@ -168,28 +168,12 @@ $(
 //我们的服务点击跳转
 $('.submenu li a').click(function () {
     var local_ser = window.location.search;
-    // console.log(local_ser != '');
     var rel = $(this).attr('rel');
-    // console.log(rel);
-    if (local_ser != '') {
-        // console.log($('.design-nav a')[rel]);
-        $(".design-nav a")[rel].click()
+    if (local_ser == '' || local_ser.indexOf('pack') != -1) {
+        window.location.href = 'design.html?' + rel
     } else {
-        window.location.href = 'design.html?' + rel;
+        $(".design-nav a")[rel].click()
     }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

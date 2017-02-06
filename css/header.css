@@ -110,7 +110,7 @@ a.active {
         left: 0;
         right: 0;
         background: #000;
-        height: 40px;
+        /*height: 40px;*/
         line-height: 30px;
         /*overflow: hidden;*/
     }

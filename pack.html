@@ -8,12 +8,21 @@
     <link rel="icon" href="img/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/header.min.css">
-    <link rel="stylesheet" href="css/pack.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .pack_inner {
+            padding: 40px 0 80px;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
 <!--页头-->
@@ -37,7 +46,7 @@
                 <li><a href="about.html">关于我们</a></li>
                 <li><a href="information.html">服务项目</a></li>
                 <li><a href="service.html">合作流程</a></li>
-                <li><a href="design.html?design">案例展示</a></li>
+                <li><a href="design.html?0">案例展示</a></li>
                 <li><a href="contact.html">联系我们</a></li>
             </ul>
         </div>
@@ -45,7 +54,7 @@
     <!--我们的服务-->
     <div class="womehti">
         <ul class="menu">
-            <li><a href="design.html?design">我们的服务</a>
+            <li><a href="design.html?0">我们的服务</a>
                 <ul class="submenu">
                     <li><a href="javascript:void(0)" rel="1">LOGO+VIS设计</a></li>
                     <li><a href="javascript:void(0)" rel="2">画册+海报设计</a></li>
@@ -62,22 +71,10 @@
 <!--导航栏遮挡部分-->
 <div class="fill" style="height: 70px; width: 100%;"></div>
 <!--主体-->
-<div class="pack">
-	<div class="container">
-		<div class="row">
-			<div class="pack_inner">
-               <h3>如何才能算是一个成功的包装?</h3>
-				<p>食品行业与包装技术的关系是非常密切的。食品包装设计要跟上时代节拍，如果同类产品包装落后于竞争对手，将会受到市场淘汰。如果你的产品在市场上销路呆滞，或者销售增长率低于市场总增长率，就要检查一下你的包装形象，市场定位，就要考虑改进包装设计，以崭新的包装形象重新占领市场。</p>
-				<img src="img/shu_01.jpg" style="width: 100%;">
-				<h4>1、感觉化包装</h4>
-				<p>感觉包装可以让消费者对包装产品有一种直觉上的感受，如触觉、视觉或嗅觉。感觉化包装主要是建立一个外部的总体感觉，如气味、纹理结构和视觉效果。例如：有的感觉包装提取内部产品的气味以吸引客人，如烤面包、烤肉、巧克力或水果气味，提取出的气味被融合在胶粘剂或涂料中，使整个包装都充满了诱人的味道。通过这样的方法可以在产品和消费者之间建立起一个联系。感觉化包装对于保持产品的完整性有很人性化的考虑。</p>
-				<h4>2、智能化包装</h4>
-				<p>智能包装主要应用于检测包装结构或材料的偏差领域。例如，检测包装纸板材料的密度，确定生产出的纸盒是否有足够的挺度来满足产品的需要，如确保果汁或牛奶不至于渗漏出来。利用激光检测技术，可以对食品包装设计的多个参数进行测定，如包装印刷油墨的微观结构。智能包装可以在包装的内部包含进大量的产品信息，它将标记和监控系统结合起来形成一套扩展跟踪体系，用以检查产品的数据。智能包装通过内部的传感元件或高级的条码以及商标信息系统，并利用感觉包装和功能包装的原理来跟踪监控产品。使用UV和EB油墨可以有效地避免条形码发生变形，对于更精确的数据检测而言，还可以使用数据芯片或微点检测系统进行控制。</p>
-				<h4>3、功能化包装</h4>
-				<p>此类包装是为了解决与内容物相关的包装问题的一种科学方法。具备液体包装盒的防腐性，应用这样的包装可以使易于腐烂的产品能保持更长的新鲜时间。消除产品自身的某种缺陷和不足而设计的包装盒，这样的包装附加件同样可以延长产品的存放期限，保持产品新鲜的口味。功能化包装可以有效地避免内容物被干扰，起到很好的保护作用。</p>
-			</div>
-		</div>
-	</div>
+<div class="container">
+    <div class="pack_inner">
+        <img id="big-img" src="" style="width: 100%;" alt="案例展示大图">
+    </div>
 </div>
 <div class="container footer">
     <div class="row">
@@ -95,6 +92,15 @@
 </div>
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+    // 加载对应大图
+    var img = window.location.search.substring(6).split('&'); // 获取地址栏参数
+    var img_file = img[0].substring(5); // 图片文件夹名称
+    var img_num = img[1].substring(4); // 图片名称
+    var img_src = 'img/anli_' + img_file + '/' + img_num + '.jpg'; // 拼接得到所需图片的完整路径
+    // 应用到页面
+    document.getElementById('big-img').setAttribute('src', img_src);
+</script>
 <script src="js/other.min.js"></script>
 </body>
 </html>
