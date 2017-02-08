@@ -305,6 +305,10 @@ a.active {
         /*opacity: 0;*/
     }
 
+    .slick-row div.box-case div {
+        border: 1px solid #ccc;
+    }
+
     .service .service-slick .box-service p.detail {
         font-size: .9em;
         white-space: nowrap;
