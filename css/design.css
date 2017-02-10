@@ -87,7 +87,7 @@ figure img {
 }
 
 .details a {
-    width: 80%;
+    width: 90%;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -103,7 +103,7 @@ figure img {
     height: 48px;
     position: fixed;
     bottom: 90px;
-    right: 0;
+    right: 10px;
     background: url(../img/top_up.png) no-repeat;
     cursor: pointer;
     opacity: .9;
