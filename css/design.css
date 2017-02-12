@@ -69,6 +69,7 @@
 figure img {
     width: 90%;
     border: 1px solid #ccc;
+    box-shadow: 7px 7px 12px gray;
 }
 
 .details h3 {
