@@ -409,8 +409,8 @@ a.active {
 }
 
 /*.menu li:hover .submenu li:nth-child(8) {*/
-    /*-webkit-transition-delay: 350ms;*/
-    /*transition-delay: 350ms;*/
+/*-webkit-transition-delay: 350ms;*/
+/*transition-delay: 350ms;*/
 /*}*/
 
 .submenu li:nth-child(1) {
@@ -449,8 +449,8 @@ a.active {
 }
 
 /*.submenu li:nth-child(8) {*/
-    /*-webkit-transition-delay: 0s;*/
-    /*transition-delay: 0s;*/
+/*-webkit-transition-delay: 0s;*/
+/*transition-delay: 0s;*/
 /*}*/
 
 .womehti { /*保留*/
