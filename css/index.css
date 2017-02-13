@@ -1261,7 +1261,11 @@ a.active {
 
     .service .service-slick .box-service p.detail {
         font-size: 1em;
-        padding: 0 10px 15px;
+        padding: 0 10px 10px;
+    }
+
+    .service .service-slick .box-service p.detail.jus {
+        color: #222;
     }
 
     /*服务*/
