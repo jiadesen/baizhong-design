@@ -1,3 +1,3 @@
 # 百众设计官网
 baizhong-design
-链接：3.hongh.applinzi.com
+链接：http://2.hongh.applinzi.com
