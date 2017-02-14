@@ -327,3 +327,26 @@ $('.submenu li a').click(function () {
         window.location.href = 'design.html?' + rel
     }
 });
+
+// 我们的客户hover彩图特效
+$(
+    function () {
+        $('#sm_icon li img').mouseenter(function () {
+            var num = $(this).attr('alt');
+            var src = 'img/index_logo/kefu-' + num + '.jpg';
+            $(this).attr('src', src);
+        });
+        //$('#sm_icon li img').mouseout(function () {
+        //    var num = $(this).attr('alt');
+        //    var src = 'img/index_logo/huilogo-' + num + '.jpg';
+        //    $(this).attr('src', src);
+        //})
+    }
+);
+
+
+
+
+
+
+

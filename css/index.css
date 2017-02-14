@@ -421,8 +421,21 @@ a.active {
     }
 
     /*首页我们的客户*/
-    .section4 .customer-con img {
+    .section4 {
+        padding: 40px 0;
+    }
+
+    .customer-con {
         width: 100%;
+    }
+
+    .hui_icon {
+        padding: 10px 5px 0;
+    }
+
+    .hui_icon img {
+        width: 100%;
+        border: 1px solid #ccc;
     }
 
     /*联系*/
@@ -1114,6 +1127,10 @@ a.active {
     }
 
     /*我们的客户*/
+    .section4 {
+        padding: 0;
+    }
+
     .customer {
         position: relative;
         top: -10px;
@@ -1124,8 +1141,8 @@ a.active {
         text-align: center;
     }
 
-    .section4 .customer-con img {
-        width: 80%;
+    .customer-con {
+        width: 90%;
     }
 
     /*联系*/
@@ -1281,12 +1298,8 @@ a.active {
         right: 30px;
     }
 
-    .section4 .customer-con {
-        text-align: center;
-    }
-
-    .section4 .customer-con img {
-        width: 80%;
+    .customer-con {
+        width: 85%;
     }
 }
 
@@ -1306,10 +1319,6 @@ a.active {
         top: -20px;
         right: 30px;
     }
-
-    .section4 .customer-con img {
-        width: 100%;
-    }
 }
 
 @media screen and (min-width: 1800px) {
@@ -1323,10 +1332,6 @@ a.active {
     .customer {
         top: -40px;
         right: 0;
-    }
-
-    .section4 .customer-con img {
-        width: 100%;
     }
 }
 
