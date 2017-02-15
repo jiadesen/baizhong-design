@@ -15,11 +15,31 @@
     <![endif]-->
     <style>
         .pack_inner {
-            padding: 40px 0 80px;
+            padding: 40px 0 10px;
         }
 
         .pack_inner img {
             border:1px solid #ccc;
+        }
+
+        .pack-box {
+            margin-bottom: 80px;
+            padding: 10px;
+            background: #EBEBE9;
+        }
+
+        .pack-box p {
+            margin-bottom: 0;
+            font-size: .9em;
+            font-weight: bold;
+            line-height: 20px;
+            color: #636363;
+        }
+
+        .pack-box p span {
+            padding-left: 10px;
+            font-weight: normal;
+            color: #999;
         }
 
         .footer {
@@ -80,6 +100,14 @@
         <img id="big-img" src="" style="width: 100%;" alt="案例展示大图">
     </div>
 </div>
+<div class="container">
+    <div class="pack-box">
+        <p>CUSTOMER | 客户<span id="cus"></span></p>
+        <p>CATEGORY | 类型<span id="siz"></span></p>
+        <p>PROJECT BACKGROUND | 背景</p>
+    </div>
+</div>
+<!-- footer -->
 <div class="container footer">
     <div class="row">
         <div class="col-xs-12 col-sm-6">
@@ -101,9 +129,13 @@
     var img = window.location.search.substring(6).split('&'); // 获取地址栏参数
     var img_file = img[0].substring(5); // 图片文件夹名称
     var img_num = img[1].substring(4); // 图片名称
+    var img_cus = decodeURIComponent(img[2].substring(4)); // 图片客户文字
+    var img_siz = decodeURIComponent(img[3].substring(4)); // 图片类型
     var img_src = 'img/anli_' + img_file + '/' + img_num + '.jpg'; // 拼接得到所需图片的完整路径
     // 应用到页面
     document.getElementById('big-img').setAttribute('src', img_src);
+    document.getElementById('cus').innerText = img_cus;
+    document.getElementById('siz').innerText = img_siz
 </script>
 <script src="js/other.min.js"></script>
 </body>
