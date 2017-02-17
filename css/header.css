@@ -225,6 +225,10 @@ a.active {
     .qq {
         text-align: left;
     }
+
+    .copy p {
+        text-align: right;
+    }
 }
 
 @media screen and (min-width: 992px) {
