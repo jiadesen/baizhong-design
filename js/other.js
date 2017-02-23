@@ -69,51 +69,10 @@ $('.design-nav a').click(function () {
             $('.work1 ul li').hide();
             $('.work1 ul .part-5').show();
             break;
-        case 'part-6':
-            $(this).addClass('active');
-            $(this).siblings('a').removeClass('active');
-            $('.work1 ul li').hide();
-            $('.work1 ul .part-6').show();
-            break;
-        case 'part-7':
-            $(this).addClass('active');
-            $(this).siblings('a').removeClass('active');
-            $('.work1 ul li').hide();
-            $('.work1 ul .part-7').show();
-            break;
-        // case 'part-8':
-        //     $(this).addClass('active');
-        //     $(this).siblings('a').removeClass('active');
-        //     $('.work1 ul .part-1').hide();
-        //     $('.work1 ul .part-2').hide();
-        //     $('.work1 ul .part-3').hide();
-        //     $('.work1 ul .part-4').hide();
-        //     $('.work1 ul .part-5').hide();
-        //     $('.work1 ul .part-6').hide();
-        //     $('.work1 ul .part-7').hide();
-        // $('.work1 ul .part-8').show();
-        // $('.work1 ul .part-9').hide();
-        //     break;
-        // case 'part-9':
-        //     $(this).addClass('active');
-        //     $(this).siblings('a').removeClass('active');
-        //     $('.work1 ul .part-1').hide();
-        //     $('.work1 ul .part-2').hide();
-        //     $('.work1 ul .part-3').hide();
-        //     $('.work1 ul .part-4').hide();
-        //     $('.work1 ul .part-5').hide();
-        //     $('.work1 ul .part-6').hide();
-        //     $('.work1 ul .part-7').hide();
-        //     $('.work1 ul .part-8').hide();
-        //     $('.work1 ul .part-9').show();
-        //     break;
     }
 });
 
-//联系页导航点击事件
-// console.log($('.panel-title'));
-// console.log($('.tab-content'));
-// console.log($('.tab-content')[1]);
+//联系页手风琴导航点击事件
 $(document).ready(
     function () {
         $('.zl').siblings().hide()
@@ -122,16 +81,8 @@ $(document).ready(
 
 $(
     $('.panel-title').click(function () {
-        // console.log($(this).parent().siblings().find('.act'));
-        // console.log($(this).attr('rel'))
         var str = $(this).attr('rel');
-        // var door = $(this).attr('aria-expanded'); //false为开
-        // var option = str + door;
         console.log(str);
-        // console.log(door);
-        // console.log(option);
-        // console.log($('.zl'));
-        // console.log($('.zl').siblings());
         switch (str) {
             case 'zl':
                 $('.zl').show();
