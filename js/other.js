@@ -1,34 +1,5 @@
 // 获得当前设备屏幕宽度(px)
 var width = $(window).width();
-$(
-    // 手机端下拉菜单点击特效
-    function () {
-        $('.icon-btn').click(function () {
-            // console.log($('#menu').attr('aria-expanded'));
-            if ($('#menu').attr('aria-expanded') == undefined || $('#menu').attr('aria-expanded') == 'false') {
-                $('.icon-btn').addClass('menu-active')
-            } else {
-                $('.icon-btn').removeClass('menu-active')
-            }
-        })
-    }
-);
-
-// 为手机端添加滚动事件监听，在菜单栏打开的状态下滑动屏幕自动关闭菜单栏
-if (width < 768) {
-    $(window).scroll(function () {
-        var open = $('.navbar-toggle').attr('aria-expanded');
-        if (open == 'true') {
-            $('.navbar-toggle').click()
-        }
-    });
-    // console.log($('#menu ul li a'));
-    $(document).ready(function () {
-        $('#menu ul li a').addClass('animated');
-        $('#menu ul li a').addClass('flipInX')
-    })
-}
-
 //设计案例页分类点击事件
 $('.design-nav a').click(function () {
     // console.log($(this).attr('rel'));
@@ -127,4 +98,31 @@ $('.submenu li a').click(function () {
     }
 });
 
+$(
+    // 手机端下拉菜单点击特效
+    function () {
+        $('.icon-btn').click(function () {
+            // console.log($('#menu').attr('aria-expanded'));
+            if ($('#menu').attr('aria-expanded') == undefined || $('#menu').attr('aria-expanded') == 'false') {
+                $('.icon-btn').addClass('menu-active')
+            } else {
+                $('.icon-btn').removeClass('menu-active')
+            }
+        })
+    }
+);
 
+// 为手机端添加滚动事件监听，在菜单栏打开的状态下滑动屏幕自动关闭菜单栏
+if (width < 768) {
+    $(window).scroll(function () {
+        var open = $('.navbar-toggle').attr('aria-expanded');
+        if (open == 'true') {
+            $('.navbar-toggle').click()
+        }
+    });
+    // console.log($('#menu ul li a'));
+    $(document).ready(function () {
+        $('#menu ul li a').addClass('animated');
+        $('#menu ul li a').addClass('flipInX')
+    })
+}

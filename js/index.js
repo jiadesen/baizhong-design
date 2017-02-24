@@ -3,30 +3,6 @@ var width = $(window).width();
 
 // TODO:根据屏幕宽度，重载页面
 
-// 手机端下拉菜单点击特效
-$(
-    function () {
-        $('.icon-btn').click(function () {
-            // console.log($('#menu').attr('aria-expanded'));
-            if ($('#menu').attr('aria-expanded') == undefined || $('#menu').attr('aria-expanded') == 'false') {
-                $('.icon-btn').addClass('menu-active')
-            } else {
-                $('.icon-btn').removeClass('menu-active')
-            }
-        })
-    }
-);
-
-// 为手机端添加滚动事件监听，在菜单栏打开的状态下滑动屏幕自动关闭菜单栏
-if (width < 768) {
-    $(window).scroll(function () {
-        var open = $('.navbar-toggle').attr('aria-expanded');
-        if (open == 'true') {
-            $('.navbar-toggle').click()
-        }
-    });
-}
-
 // 首页全屏展示
 $(
     function () {
@@ -261,7 +237,7 @@ $(
                 arrows: true, // 箭头导航(默认true)
                 dots: false,
                 infinite: false,
-                speed: 300,
+                speed: 800,
                 slidesToShow: 3,
                 slidesToScroll: 3,
                 responsive: [
@@ -344,6 +320,29 @@ $(
     }
 );
 
+// 手机端下拉菜单点击特效
+$(
+    function () {
+        $('.icon-btn').click(function () {
+            // console.log($('#menu').attr('aria-expanded'));
+            if ($('#menu').attr('aria-expanded') == undefined || $('#menu').attr('aria-expanded') == 'false') {
+                $('.icon-btn').addClass('menu-active')
+            } else {
+                $('.icon-btn').removeClass('menu-active')
+            }
+        })
+    }
+);
+
+// 为手机端添加滚动事件监听，在菜单栏打开的状态下滑动屏幕自动关闭菜单栏
+if (width < 768) {
+    $(window).scroll(function () {
+        var open = $('.navbar-toggle').attr('aria-expanded');
+        if (open == 'true') {
+            $('.navbar-toggle').click()
+        }
+    });
+}
 
 
 

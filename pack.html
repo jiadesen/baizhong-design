@@ -19,7 +19,7 @@
         }
 
         .pack_inner img {
-            border:1px solid #ccc;
+            border: 1px solid #ccc;
         }
 
         .pack-box {
@@ -100,7 +100,7 @@
 </div>
 <div class="container">
     <div class="pack-box">
-        <p>CUSTOMER | 客户<span id="cus"></span></p>
+        <p class="cus">CUSTOMER | 客户<span id="cus"></span></p>
         <p>CATEGORY | 类型<span id="siz"></span></p>
         <p>PROJECT BACKGROUND | 背景</p>
     </div>
@@ -132,7 +132,11 @@
     var img_src = 'img/anli_' + img_file + '/' + img_num + '.jpg'; // 拼接得到所需图片的完整路径
     // 应用到页面
     document.getElementById('big-img').setAttribute('src', img_src);
-    document.getElementById('cus').innerText = img_cus;
+    if (img_cus == '') {
+        document.getElementsByClassName('cus')[0].innerHTML = '';
+    } else {
+        document.getElementById('cus').innerText = img_cus;
+    }
     document.getElementById('siz').innerText = img_siz
 </script>
 <script src="js/other.min.js"></script>
