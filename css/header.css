@@ -103,23 +103,19 @@ a.active {
     }
 
     .footer {
-        /*position: absolute;*/
         width: 100%;
         margin: 0;
         bottom: 0;
         left: 0;
         right: 0;
         background: #000;
-        /*height: 40px;*/
         line-height: 30px;
-        /*overflow: hidden;*/
     }
 
     .qq {
         height: 40px;
         text-align: center;
         padding-top: 5px;
-        /*padding-left: 10px;*/
     }
 
     .weixin {
@@ -198,17 +194,6 @@ a.active {
         transition: .3s ease-in-out;
     }
 
-    /*#menu ul li a:after {*/
-    /*content: '';*/
-    /*display: block;*/
-    /*width: 0;*/
-    /*border-bottom: 3px solid #e60012;*/
-    /*position: absolute;*/
-    /*top: -10px;*/
-    /*left: 5%;*/
-    /*-webkit-transition: .3s ease-in-out;*/
-    /*transition: .3s ease-in-out;*/
-    /*}*/
     #menu ul li:hover a:before {
         width: 90%;
         box-shadow: 0 -10px 38px #e60012;
@@ -216,12 +201,6 @@ a.active {
         transition: .4s ease-in-out;
     }
 
-    /*#menu ul li:hover a:after {*/
-    /*width: 90%;*/
-    /*box-shadow: 0 10px 38px #e60012;*/
-    /*-webkit-transition: .4s ease-in-out;*/
-    /*transition: .4s ease-in-out;*/
-    /*}*/
     .qq {
         text-align: left;
     }
@@ -284,8 +263,6 @@ a.active {
 }
 
 .menu li {
-    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#252525');*/
-    /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#292929', endColorstr='#252525')";*/
     background: -webkit-linear-gradient(#fff, #fff);
     background: linear-gradient(#fff, #fff);
     border: 2px solid #ccc;
@@ -306,7 +283,6 @@ a.active {
 }
 
 .menu a {
-    /*border: 2px solid transparent;*/
     color: #000;
     -webkit-transition: .4s ease-in-out;
     transition: .4s ease-in-out;
@@ -321,22 +297,12 @@ a.active {
 
 /* 悬停时的样式 */
 .menu li:hover {
-    /*background-color: #fff;*/
-    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #1c1c1c), color-stop(100%, #1b1b1b));*/
-    /*background: -webkit-linear-gradient(#1c1c1c, #1b1b1b);*/
-    /*background: -o-linear-gradient(#1c1c1c, #1b1b1b);*/
-    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b');*/
-    /*-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#1c1c1c', endColorstr='#1b1b1b')";*/
     background: -webkit-linear-gradient(#fff, #fff);
     background: linear-gradient(#fff, #fff);
-    /*border-radius: 5px;*/
     border: 2px solid red;
-    /*transition: .3s;*/
 }
 
 .menu li:hover > a {
-    /*border-radius: 5px;*/
-    /*border: 2px solid #ccc;*/
     color: red;
 }
 
@@ -360,8 +326,6 @@ a.active {
 }
 
 .menu .submenu li:hover a {
-    /*border: 2px solid #fff;*/
-    /*border-radius: 5px;*/
     color: red;
 }
 
@@ -412,11 +376,6 @@ a.active {
     transition-delay: 300ms;
 }
 
-/*.menu li:hover .submenu li:nth-child(8) {*/
-/*-webkit-transition-delay: 350ms;*/
-/*transition-delay: 350ms;*/
-/*}*/
-
 .submenu li:nth-child(1) {
     -webkit-transition-delay: 300ms;
     transition-delay: 300ms;
@@ -451,11 +410,6 @@ a.active {
     -webkit-transition-delay: 10ms;
     transition-delay: 10ms;
 }
-
-/*.submenu li:nth-child(8) {*/
-/*-webkit-transition-delay: 0s;*/
-/*transition-delay: 0s;*/
-/*}*/
 
 .womehti { /*保留*/
     width: 100px;
