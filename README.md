@@ -15,7 +15,7 @@
 
     XAMPP 集成软件
 
-    chrome浏览器
+    chrome
 
 ## 网站技术摘要
 
