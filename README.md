@@ -7,6 +7,16 @@
 * 官网：http://www.baizhongdesign.com
 * 个人：http://2.mypro.applinzi.com
 
+## 开发环境
+
+    windows 10 专业版 x64
+
+    Webstorm 2016.3.2(64)
+
+    XAMPP 集成软件
+
+    chrome浏览器
+
 ## 网站技术摘要
 
 * 兼容当前主流浏览器的展示性公司网站
